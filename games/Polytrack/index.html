@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyTrack - Low-poly Racing Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">PolyTrack</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#play-game">Play Game</a></li>
+                <li><a href="#how-to-play">How to Play</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="guides.html">Guides</a></li>
+            </ul>
+            <div class="nav-right">
+                <!-- Reserved for theme toggle and language selector -->
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>PolyTrack</h1>
+            <p>A low-poly racing game with loops, jumps and high speeds, where every millisecond counts</p>
+        </div>
+    </section>
+
+    <!-- Game Embed Section -->
+    <section id="play-game" class="game-embed">
+        <div class="container">
+            <h2>Play PolyTrack Game</h2>
+            <div class="game-container">
+                <iframe src="https://html-classic.itch.zone/html/13305767/index.html" frameborder="0" allowfullscreen></iframe>
+                <button class="fullscreen-btn" id="fullscreen-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+            <div class="social-share">
+                <p>Share this game:</p>
+                <div class="social-buttons">
+                    <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="#" class="social-btn reddit"><i class="fab fa-reddit-alien"></i> Reddit</a>
+                    <a href="#" class="social-btn tiktok"><i class="fab fa-tiktok"></i> TikTok</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Game Features</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>High-Speed Racing</h3>
+                    <p>Experience thrilling high-speed racing with challenging tracks and tight turns</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>Level Editor</h3>
+                    <p>Create your own tracks with the built-in level editor and share them with others</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Time Challenges</h3>
+                    <p>Race against the clock to improve your times and beat your personal records</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Multi-Language Support</h3>
+                    <p>Enjoy the game in 16 different languages including English, Spanish, Japanese and more</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Play Section -->
+    <section id="how-to-play" class="how-to-play">
+        <div class="container">
+            <h2>How to Play PolyTrack</h2>
+            <div class="instructions">
+                <div class="gameplay">
+                    <h3>Game Controls</h3>
+                    <ul>
+                        <li><span class="key">WASD</span> or <span class="key">Arrow Keys</span> to drive</li>
+                        <li><span class="key">R</span> or <span class="key">Enter</span> to restart the track</li>
+                    </ul>
+                </div>
+                <div class="editor">
+                    <h3>Editor Controls</h3>
+                    <ul>
+                        <li><span class="key">Left Mouse Button</span> to build</li>
+                        <li><span class="key">Middle Mouse Button</span> to rotate the view</li>
+                        <li><span class="key">Right Mouse Button</span> to pan the view</li>
+                        <li><span class="key">Shift + Mouse Wheel</span> to go up or down</li>
+                        <li><span class="key">R</span> to rotate the selected part</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is PolyTrack?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>PolyTrack is a low-poly racing game heavily inspired by TrackMania, where you race against the clock to improve your time on different tracks. The game features loops, jumps, and high speeds where every millisecond counts.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I create my own tracks?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! PolyTrack includes a level editor where you can create your own tracks. You can then export and share these tracks with other players.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What platforms can I play PolyTrack on?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>PolyTrack is available on HTML5, Windows, macOS, and Linux platforms, so you can play it on virtually any device.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is PolyTrack available in multiple languages?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, PolyTrack supports 16 languages including Arabic, German, English, Spanish, French, Italian, Japanese, Korean, Polish, Portuguese, Russian, Turkish, Ukrainian, and Chinese.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I play PolyTrack on mobile devices?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, PolyTrack supports touchscreen inputs, making it compatible with smartphones and tablets.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is PolyTrack a multiplayer game?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>PolyTrack is primarily a singleplayer game where you compete against the clock. However, you can share your tracks and times with friends to compete indirectly.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Where can I find more tracks to play?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can find more tracks shared by the community on the official PolyTrack Discord server and Reddit page.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guides Section -->
+    <section id="guides" class="guides">
+        <div class="container">
+            <h2>Latest Guides & Articles</h2>
+            <div class="guides-container">
+
+                
+                <a href="articles/polytrack-crazy-games-guide.html" class="guide-card">
+                    <div class="guide-image">
+                        <img src="images/polytrack-crazy-games.jpg" alt="PolyTrack Crazy Games gameplay">
+                    </div>
+                    <div class="guide-content">
+                        <h3>PolyTrack Crazy Games: Ultimate Guide to Wild Racing</h3>
+                        <p class="guide-meta">May 20, 2025 · 18 min read</p>
+                        <p class="guide-excerpt">Discover the wildest and most entertaining game modes in PolyTrack's Crazy Games collection.</p>
+                    </div>
+                </a>
+                
+                <a href="articles/games-like-polytrack.html" class="guide-card">
+                    <div class="guide-image">
+                        <img src="images/games-like-polytrack.jpg" alt="Collage of racing games similar to PolyTrack">
+                    </div>
+                    <div class="guide-content">
+                        <h3>Games Like PolyTrack: 8 Awesome Alternatives You'll Love</h3>
+                        <p class="guide-meta">May 25, 2025 · 10 min read</p>
+                        <p class="guide-excerpt">Discover 8 fantastic games that capture the same magic as PolyTrack.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="view-all-guides">
+                <a href="guides.html" class="button">View All Guides</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>PolyTrack</h3>
+                    <p>A low-poly racing game where every millisecond counts. Created by Kodub.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#play-game">Play Game</a></li>
+                        <li><a href="#how-to-play">How to Play</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="guides.html">Guides</a></li>
+                        <li><a href="https://discord.gg/polytrack" target="_blank">Discord</a></li>
+                        <li><a href="https://reddit.com/r/polytrack" target="_blank">Reddit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 polytrack-game.app. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

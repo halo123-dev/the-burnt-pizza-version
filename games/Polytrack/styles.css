@@ -1,0 +1,601 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #222;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+.nav-links a.active {
+    color: #3498db;
+    font-weight: 500;
+}
+
+.nav-right {
+    width: 100px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Hero Section Styles */
+.hero {
+    padding-top: 120px;
+    text-align: center;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Game Embed Section Styles */
+.game-embed {
+    text-align: center;
+}
+
+.game-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin-bottom: 20px;
+}
+
+.game-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.fullscreen-btn {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
+
+.fullscreen-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.social-share {
+    margin-top: 30px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    transition: opacity 0.3s;
+}
+
+.social-btn:hover {
+    opacity: 0.8;
+}
+
+.social-btn i {
+    margin-right: 5px;
+}
+
+.twitter {
+    background-color: #1DA1F2;
+}
+
+.facebook {
+    background-color: #4267B2;
+}
+
+.linkedin {
+    background-color: #0077B5;
+}
+
+.reddit {
+    background-color: #FF4500;
+}
+
+.tiktok {
+    background-color: #000000;
+}
+
+/* Features Section Styles */
+.features {
+    background-color: #f9f9f9;
+}
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 40px;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+/* How to Play Section Styles */
+.how-to-play {
+    text-align: center;
+}
+
+.instructions {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.gameplay, .editor {
+    text-align: left;
+    flex: 1;
+    min-width: 300px;
+}
+
+.key {
+    display: inline-block;
+    background-color: #eee;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: monospace;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+}
+
+.instructions ul li {
+    margin-bottom: 15px;
+}
+
+/* FAQ Styles */
+.faq {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #f5f5f5;
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.faq-toggle {
+    transition: transform 0.3s;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s, padding 0.3s;
+}
+
+.faq-item.active .faq-answer {
+    padding: 0 20px 20px;
+    max-height: 1000px;
+}
+
+/* Guides Section Styles */
+.guides {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.guides-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.guide-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.guide-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.guide-image {
+    height: 180px;
+    overflow: hidden;
+}
+
+.guide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.guide-card:hover .guide-image img {
+    transform: scale(1.05);
+}
+
+.guide-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.guide-content h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    line-height: 1.4;
+    color: #222;
+}
+
+.guide-meta {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.guide-excerpt {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.guide-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: auto;
+}
+
+.tag {
+    background-color: #f0f0f0;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #555;
+    display: inline-block;
+}
+
+.view-all-guides {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+/* Article List Page Styles */
+.articles-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px 60px;
+}
+
+.articles-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.articles-header h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.articles-header p {
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-column h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #3498db;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #3498db;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .navbar .container {
+        padding: 15px;
+    }
+
+    .nav-links {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: #222;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .hero {
+        padding-top: 100px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-btn {
+        width: 200px;
+    }
+
+    .instructions {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+} 
